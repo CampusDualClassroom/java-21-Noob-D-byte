@@ -53,13 +53,22 @@ public class Exercise21 {
     private static void printSet(Set<String> customSet) {
 //Recorrer cada conjunto usando el metodo printSet() mostrando por pantalla el valor de cada elemento.
         for (String element : customSet) {
-
             System.out.println(element);
         }
     }
 
 
     public static boolean addElementToSet(Set<String> set, String elementToAdd) {
+        /*Nice to have
+
+        if (set.add(elementToAdd)) {
+            System.out.println("Se ha agregado el elemento. ");
+            return true;
+        } else {
+            System.out.println("No se ha podido agregar el elemento. ");
+            return false;
+        }*/
+
         //Añadir un elemento más a cada conjunto usando el metodo addElementToSet()
         // y devolver el booleano resultante de la operación.
         return set.add(elementToAdd);
